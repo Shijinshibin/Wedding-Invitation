@@ -1,0 +1,120 @@
+.venue{
+    padding:120px 20px;
+    background:#fffdf8;
+    text-align:center;
+}
+
+.venue-subtitle{
+    letter-spacing:5px;
+    color:#c59d5f;
+    margin-bottom:10px;
+}
+
+.venue h2{
+    font-size:50px;
+    color:#4d3525;
+    margin-bottom:50px;
+    font-family:Georgia, serif;
+}
+
+.venue-card{
+
+max-width:600px;
+
+margin:auto;
+
+background:white;
+
+padding:50px;
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.venue-icon{
+
+font-size:60px;
+
+color:#c59d5f;
+
+margin-bottom:20px;
+}
+
+.venue h3{
+
+font-size:32px;
+
+margin-bottom:15px;
+}
+
+.venue p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+}
+
+.time{
+
+margin-top:25px;
+
+font-weight:bold;
+}
+
+.venue button{
+
+margin-top:35px;
+
+padding:16px 40px;
+
+background:#c59d5f;
+
+border:none;
+
+border-radius:40px;
+
+color:white;
+
+font-size:18px;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+cursor:pointer;
+
+transition:.4s;
+}
+
+.venue button:hover{
+
+transform:translateY(-5px);
+}
+
+.venue a{
+
+display:flex;
+
+justify-content:center;
+
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.venue h2{
+
+font-size:36px;
+}
+
+.venue-card{
+
+padding:35px 20px;
+}
+
+}

@@ -17,8 +17,14 @@ function Hero() {
         muted
         loop
         playsInline
+        preload="auto"
       >
-        <source src="/videos/wedding.mp4" type="video/mp4" />
+        <source
+          src={`${import.meta.env.BASE_URL}videos/wedding.mp4`}
+          type="video/mp4"
+        />
+
+        Your browser does not support the video element.
       </video>
 
       <div className="overlay"></div>
@@ -51,14 +57,11 @@ function Hero() {
 
       </div>
 
-      {/* Scroll Down */}
-
       <button
         className="scroll-down"
         onClick={scrollDown}
         aria-label="Scroll down"
       >
-
         <span className="scroll-text">
           SCROLL
         </span>
@@ -68,7 +71,6 @@ function Hero() {
         <span className="scroll-arrow">
           ↓
         </span>
-
       </button>
 
     </section>

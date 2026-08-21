@@ -5,13 +5,13 @@ function Couple() {
     <section className="couple-section">
 
       <img
-        src="/images/couple.jpg"
+        src="/gallery/photo4.jpg"
         alt="Couple"
         className="couple-image"
       />
 
       <h2>
-  Amrutha <span>♥</span> Jeeva
+  Amulya  <span>♥</span> Jeeva
 </h2>
 
    <p>

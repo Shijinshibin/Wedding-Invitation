@@ -105,6 +105,12 @@ justify-content:center;
 text-decoration:none;
 }
 
+.venue-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    margin-top:60px;
+}
 @media(max-width:768px){
 
 .venue h2{
@@ -117,4 +123,9 @@ font-size:36px;
 padding:35px 20px;
 }
 
+}
+@media(max-width:768px){
+    .venue-grid{
+        grid-template-columns:1fr;
+    }
 }

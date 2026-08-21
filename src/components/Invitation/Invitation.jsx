@@ -4,10 +4,11 @@ import Countdown from "../Countdown/Countdown";
 import Story from "../Story/Story";
 import Couple from "../Couple/Couple";
 import Venue from "../Venue/Venue";
-import RSVP from "../RSVP/RSVP";
+
 import Footer from "../Footer/Footer";
 import Petals from "../Petals/Petals";
 import MusicPlayer from "../MusicPlayer/MusicPlayer";
+import Gallery from "../Gallery/Gallery";
 
 function Invitation() {
   return (
@@ -18,9 +19,10 @@ function Invitation() {
       <WeddingDetails />
       <Countdown />
       <Story />
+      <Gallery />
       <Couple />
       <Venue />
-      <RSVP />
+      
       <Footer />
     </>
   );

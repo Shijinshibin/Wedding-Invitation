@@ -4,18 +4,18 @@ function Story() {
   const stories = [
     {
       date: "December 14, 2025",
-      title: "First Meet",
-      text: "The day our journey began. A simple meeting turned into something truly special, marking the beginning of a beautiful love story."
+      title: "The official gathering ",
+      text: "A day when two families came together, embracing a future filled with love, trust, and togetherness."
     },
     {
       date: "January 26, 2026",
-      title: "Engagement",
+      title: "The Promise",
       text: "Surrounded by the love and blessings of our families, we promised to walk hand in hand through every chapter of life."
     },
     {
       date: "August 27, 2026",
-      title: "Wedding Day",
-      text: "Today, our two hearts become one. We begin a new journey filled with love, happiness, and a lifetime of beautiful memories."
+      title: "The Celebration",
+      text: "The day, our two hearts become one. We begin a new journey filled with love, happiness, and a lifetime of beautiful memories."
     }
   ];
 

@@ -1,88 +1,70 @@
-import { useRef } from "react";
+import { useState } from "react";
 import "./Envelope.css";
-
-
+import env from "../../assets/images/env.png";
 
 function Envelope({ onOpen }) {
 
-
+  const [closing, setClosing] = useState(false);
 
   const handleOpen = () => {
 
+    setClosing(true);
 
     setTimeout(() => {
-
       onOpen();
-
-    }, 1000);
+    }, 300);
 
   };
 
   return (
+    <section className={`envelope-screen ${closing ? "fade-out" : ""}`}>
 
-    <>
+      <div className="bg-glow glow1"></div>
+      <div className="bg-glow glow2"></div>
 
+      <div className="envelope-container">
 
+       <p className="welcome">
+    TOGETHER WITH OUR FAMILIES
+</p>
 
-      <section className="envelope-screen">
+<div className="divider"></div>
 
-        <div className="bg-glow glow1"></div>
+<h1 className="title">
+    Wedding
+</h1>
 
-        <div className="bg-glow glow2"></div>
+<h2 className="script">
+    Invitation
+</h2>
 
-        <div className="envelope-container">
+<p className="quote">
+    Two hearts. One promise.
+    <br />
+    A lifetime of love.
+</p>
 
-          <p className="welcome">
+<div className="divider"></div>
 
-            Together with our families
+<p className="sub">
+    WE WARMLY INVITE YOU TO
+    <br />
+    CELEBRATE OUR BEAUTIFUL BEGINNING.
+</p>
 
-          </p>
+<img
+    src={env}
+    className="envelope-img"
+    onClick={handleOpen}
+/>
 
-          <h1>
+<p className="click">
+    Click the Envelope to Open
+</p>
+      </div>
 
-            Wedding Invitation
-
-          </h1>
-
-          <p className="sub">
-
-            We warmly invite you to celebrate
-            <br />
-            our beautiful beginning.
-
-          </p>
-
-          <div
-            className="envelope"
-            onClick={handleOpen}
-          >
-
-            <div className="envelope-back"></div>
-
-            <div className="flap"></div>
-
-            <div className="seal">
-
-              ❤
-
-            </div>
-
-          </div>
-
-          <p className="click">
-
-            ✨ Tap the Golden Seal to Open ✨
-
-          </p>
-
-        </div>
-
-      </section>
-
-    </>
-
+    </section>
   );
-
 }
 
 export default Envelope;

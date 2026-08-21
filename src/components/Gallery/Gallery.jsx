@@ -1,10 +1,10 @@
 import "./Gallery.css";
 
 const images = [
-  "/gallery/photo1.jpg",
-  "/gallery/photo2.jpg",
-  "/gallery/photo3.jpg",
-  "/gallery/photo4.jpg",
+  "gallery/photo1.jpg",
+  "gallery/photo2.jpg",
+  "gallery/photo3.jpg",
+  "gallery/photo4.jpg",
 ];
 
 function Gallery() {
@@ -27,19 +27,15 @@ function Gallery() {
       <div className="gallery-grid">
 
         {images.map((image, index) => (
-
           <div
             className="gallery-card"
-            key={index}
+            key={image}
           >
-
             <img
-              src={image}
-              alt=""
+              src={`${import.meta.env.BASE_URL}${image}`}
+              alt={`Wedding memory ${index + 1}`}
             />
-
           </div>
-
         ))}
 
       </div>
